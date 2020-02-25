@@ -48,11 +48,8 @@ function processFirstItem(stringList, callback) {
  * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processLength(/* CODE HERE */processLength) {
-  /* CODE HERE */
-  function processLength(list,callback){
+function processLength(list,callback) {
     return callback (list.length)
-  }
 }
 
 /**
@@ -142,7 +139,7 @@ function processProduct(num1, num2, callback) {
  * should return "sad".
 */
 function processContains(item,list,callback) {
-  return
+  return callback (list.includes(item))
 }
 
 /**
